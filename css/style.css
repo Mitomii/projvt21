@@ -1,1 +1,55 @@
-/* Denna fil skall innehålla din CSS kod */
+* {
+    margin:0%
+}
+
+#alltIndex {
+    display: flex;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "he he dv"
+    "a1 a1 a1"
+    "a2 a2 a2"
+    "a3 a3 a3"
+    "d1 d1 d1"
+    ;
+}
+
+.headerAllaSidor {
+    grid-area: he;
+    background-color: aqua;
+}
+
+#alltIndex h1{
+    text-align: center;
+    
+}
+
+#alltIndex p{
+    text-align: center;
+}
+
+.articleIndex {
+    grid-area: a1;
+}
+
+.articleIndex2 {
+    grid-area: a2;
+    text-align: center;
+}
+
+.articleIndex3 {
+    grid-area: a3;
+    text-align: center;
+}
+
+.footerDiv {
+    grid-area: d1;
+}
+
+.burgerMeny {
+    grid-area: dv;
+    width: 20%;
+}
