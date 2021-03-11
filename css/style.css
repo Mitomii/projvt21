@@ -1,13 +1,17 @@
 * {
-    margin:0%
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 #alltIndex {
+    font-size: 100%;
     display: flex;
     width: 100vw;
+    height: 130vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0.25fr;
+    grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "he he dv"
     "a1 a1 a1"
@@ -24,11 +28,18 @@
 
 #alltIndex h1{
     text-align: center;
+    padding: 3.5%;
+    font-size: 2.5em;
+    
     
 }
 
 #alltIndex p{
     text-align: center;
+}
+
+#alltIndex article {
+    padding: 10%;
 }
 
 .articleIndex {
@@ -46,10 +57,93 @@
 }
 
 .footerDiv {
+    display: grid;
     grid-area: d1;
+    grid-template-columns: 1fr 0.1fr 0.1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "mp in fb"
+    ;
 }
 
 .burgerMeny {
     grid-area: dv;
     width: 20%;
+}
+
+.lokalisering {
+    grid-area: mp;
+}
+
+.instagram {
+    grid-area: in;
+}
+
+.facebook {
+    grid-area: fb;
+}
+
+section h2 {
+    text-align: center;
+}
+
+/* Burger */
+
+
+.burgerMeny {
+    grid-area: dv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+.burgerLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: -90vh;
+    background-color: aqua;
+    align-items: center;
+}
+
+.burgerActive {
+    transform: translateY(100vh);
+}
+
+.burgerLinks li {
+    list-style: none;
+}
+
+.burgerLinks a {
+    color:rgb(156, 191, 214);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.burger div {
+    width: 2em;
+    height: 3px;
+    background-color:rgb(156, 191, 214);
+    margin: 5px;
+    border-radius: 10%;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
