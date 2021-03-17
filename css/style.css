@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* Allt */
+
 #alltIndex {
     font-size: 100%;
     display: flex;
@@ -41,6 +43,8 @@
 #alltIndex article {
     padding: 10%;
 }
+
+/* Index sida */
 
 .articleIndex {
     grid-area: a1;
@@ -147,3 +151,92 @@ section h2 {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+/* Samverkan */
+
+#alltSamverkan {
+    text-align: center;
+    font-size: 100%;
+    display: flex;
+    width: 100vw;
+    height: 130vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.25fr;
+    grid-template-rows: 0.6fr 3fr 1fr;
+    grid-template-areas: 
+    "he he dv"
+    "SA SA SA"
+    "d1 d1 d1"
+    ;
+}
+
+
+.innerSamverkan {
+    grid-area: SA;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "h1 h1"
+    "h2 h2"
+    "s1 s2"
+    "s1 s2"
+    ;
+
+}
+
+
+.articleSamverkan1 {
+    grid-area: s1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 10%;
+}
+
+
+.articleSamverkan2 {
+    grid-area: s2;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 10%;
+}
+
+.headerSamverkan {
+    grid-area: h1;
+    font-size: 150%;
+}
+
+.underHeaderSamverkan {
+    grid-area: h2;
+    font-size: 150%;
+}
+
+.headerSamverkanHusen {
+    font-size: 150%;
+}
+
+ul {
+    background: #ff9999;
+    padding: 20px;
+  }
+
+/* Galleri */
+
+#alltGalleri {
+    font-size: 100%;
+    display: flex;
+    width: 100vw;
+    height: 130vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.25fr;
+    grid-template-rows: 0.6fr 3fr 1fr;
+    grid-template-areas: 
+    "he he dv"
+    "GA GA GA"
+    "d1 d1 d1"
+        ;
+
+}
+
