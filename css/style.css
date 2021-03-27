@@ -242,6 +242,7 @@ ul {
     width: 100vw;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 130vh;
     display: grid;
     grid-template-columns: 1fr 1fr 0.25fr;
@@ -253,10 +254,15 @@ ul {
     grid-template-rows: 0.6fr 3fr 0.5fr;
 >>>>>>> parent of 9b9edcf... RutinPush
 =======
+=======
+>>>>>>> parent of 9b9edcf... RutinPush
     height: 120vh;
     display: grid;
     grid-template-columns: 1fr 1fr 0.25fr;
     grid-template-rows: 0.6fr 3fr 0.5fr;
+<<<<<<< HEAD
+>>>>>>> parent of 9b9edcf... RutinPush
+=======
 >>>>>>> parent of 9b9edcf... RutinPush
     grid-template-areas: 
     "he he dv"
@@ -265,9 +271,21 @@ ul {
         ;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 }
 
+=======
+=======
+>>>>>>> parent of 9b9edcf... RutinPush
+
+}
+
+.innerGalleri {
+<<<<<<< HEAD
+
+}
+>>>>>>> parent of 9b9edcf... RutinPush
 =======
 
 }
@@ -277,10 +295,6 @@ ul {
 }
 >>>>>>> parent of 9b9edcf... RutinPush
 =======
-
-}
-
-.innerGalleri {
 
 }
 >>>>>>> parent of 9b9edcf... RutinPush
