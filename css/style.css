@@ -27,6 +27,8 @@
     grid-area: BB;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
 }
 
 .panalLogga {
@@ -70,12 +72,8 @@
 
 .footerDiv {
     grid-area: d1;
-    display: grid;
-    grid-template-columns: 1fr 0.1fr 0.1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "mp in fb"
-    ;
+    display: flex;
+    flex-direction: row;
 }
 
 .burgerMeny {
@@ -89,10 +87,12 @@
 
 .instagram {
     grid-area: in;
+    align-self: flex-end;
 }
 
 .facebook {
     grid-area: fb;
+    align-self: flex-end;
 }
 
 #facebook {
