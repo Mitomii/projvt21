@@ -26,12 +26,14 @@
 .headerAllaSidor {
     grid-area: he;
     background-color: aqua;
-    padding: 3.5%;
-    font-size: 2em;
 }
 
 #alltIndex h1{
     text-align: center;
+    padding: 3.5%;
+    font-size: 2.5em;
+    
+    
 }
 
 #alltIndex p{
@@ -85,10 +87,6 @@
 .facebook {
     grid-area: fb;
     align-self: flex-end;
-}
-
-#facebook {
-    grid-area: fb;
 }
 
 section h2 {
@@ -179,13 +177,12 @@ section h2 {
     grid-area: SA;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(1fr, 5);
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "h1 h1"
     "h2 h2"
     "s1 s2"
     "s1 s2"
-    "s3 s3"
     ;
 
 }
@@ -206,13 +203,6 @@ section h2 {
     flex-direction: column;
     border: 1px solid black;
     margin: 10%;
-}
-
-.articleSamverkan3 {
-    grid-area: s3;
-    margin: 3%;
-    margin-left: 40%;
-    margin-right: 40%;
 }
 
 .headerSamverkan {
@@ -240,10 +230,10 @@ ul {
     font-size: 100%;
     display: flex;
     width: 100vw;
-    height: 120vh;
+    height: 130vh;
     display: grid;
     grid-template-columns: 1fr 1fr 0.25fr;
-    grid-template-rows: 0.6fr 3fr 0.5fr;
+    grid-template-rows: 0.6fr 3fr 1fr;
     grid-template-areas: 
     "he he dv"
     "GA GA GA"
@@ -252,6 +242,3 @@ ul {
 
 }
 
-.innerGalleri {
-
-}
