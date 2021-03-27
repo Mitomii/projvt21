@@ -1,1 +1,10 @@
 I denna mapp lägger du alla bilder som skall vara med på hemsidan, jpg, png och gif.
+
+    <section class="innerGalleri">
+    <div> <img src="../img/Kapten Beto.png" alt=""><strong>Kapten Beto</strong></div>
+    <div> <img src="../img/Opus 5.png" alt=""></div>
+    <div> <img src="../img/Samtal med Sören.png" alt=""></div>
+    <div> <img src="../img/The True Story.png" alt=""></div>
+    <div></div>
+    <div></div>
+</section>
