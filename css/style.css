@@ -15,7 +15,7 @@
     grid-template-columns: 1fr 1fr 0.25fr;
     grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "he he dv"
+    "BB BB BB"
     "a1 a1 a1"
     "a2 a2 a2"
     "a3 a3 a3"
@@ -23,8 +23,18 @@
     ;
 }
 
+.bakgrundsBild {
+    grid-area: BB;
+    display: flex;
+    flex-direction: row;
+}
+
+.panalLogga {
+    background-color: aqua;
+    width: 30%;
+}
+
 .headerAllaSidor {
-    grid-area: he;
     background-color: aqua;
     padding: 3.5%;
     font-size: 2em;
@@ -59,8 +69,8 @@
 }
 
 .footerDiv {
-    display: grid;
     grid-area: d1;
+    display: grid;
     grid-template-columns: 1fr 0.1fr 0.1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
@@ -79,12 +89,10 @@
 
 .instagram {
     grid-area: in;
-    align-self: flex-end;
 }
 
 .facebook {
     grid-area: fb;
-    align-self: flex-end;
 }
 
 #facebook {
@@ -99,7 +107,6 @@ section h2 {
 
 
 .burgerMeny {
-    grid-area: dv;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,17 +170,16 @@ section h2 {
     font-size: 100%;
     display: flex;
     width: 100vw;
-    height: 130vh;
+    height: 150vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 0.25fr;
-    grid-template-rows: 0.6fr 3fr 1fr;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0.3fr 3fr 1fr;
     grid-template-areas: 
-    "he he dv"
+    "pl he dv"
     "SA SA SA"
     "d1 d1 d1"
     ;
 }
-
 
 .innerSamverkan {
     grid-area: SA;
@@ -189,7 +195,6 @@ section h2 {
     ;
 
 }
-
 
 .articleSamverkan1 {
     grid-area: s1;
@@ -210,9 +215,11 @@ section h2 {
 
 .articleSamverkan3 {
     grid-area: s3;
-    margin: 3%;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-top: -3%;
+    margin-bottom: 3%;
+    margin-left: 28%;
+    margin-right: 28%;
+    border: 1px solid black;
 }
 
 .headerSamverkan {
@@ -230,28 +237,54 @@ section h2 {
 }
 
 ul {
-    background: #ff9999;
     padding: 20px;
+    list-style-type: none;
   }
 
 /* Galleri */
 
 #alltGalleri {
+    text-align: center;
     font-size: 100%;
     display: flex;
     width: 100vw;
-    height: 120vh;
+    height: 150vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 0.25fr;
-    grid-template-rows: 0.6fr 3fr 0.5fr;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0.3fr 3fr 1fr;
     grid-template-areas: 
-    "he he dv"
+    "pl he dv"
     "GA GA GA"
     "d1 d1 d1"
-        ;
-
+    ;
 }
 
 .innerGalleri {
+    grid-area: GA;
 
+}
+
+.articleGalleri {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bilderGalleri {
+ width: 50%;
+ align-self: flex-start;
+}
+
+.bilderOchInfo {
+    display: flex;
+    border: 1px solid black;
+    margin-bottom: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    flex-direction: row;
+    width: 100vh;
+}
+
+.bilderOchInfo strong {
+    font-size: 120%;
 }
