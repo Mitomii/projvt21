@@ -56,9 +56,7 @@
     font-size: 220%;
     margin-left: 6%;
     display: block;
-    background-color: white;
     margin-top: 2%;
-    border-radius: 50px;
     
 }
 
@@ -281,7 +279,7 @@ ul {
 
 .innerGalleri {
     grid-area: GA;
-
+    margin-top: 5%;
 }
 
 .articleGalleri {
@@ -291,8 +289,8 @@ ul {
 }
 
 .bilderGalleri {
- width: 50%;
- align-self: flex-start;
+    width: 50%;
+    align-self: flex-start;
 }
 
 .bilderOchInfo {
@@ -309,21 +307,7 @@ ul {
     font-size: 120%;
 }
 
-
-.demo-wrap {
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .demo-bg {
-    opacity: 0.6;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-  }
-  
-  .demo-content {
-    position: relative;
-  }
+.articleGalleri h1 {
+    font-size: 200%;
+    margin-bottom: 5%;
+}
