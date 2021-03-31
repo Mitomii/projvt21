@@ -6,31 +6,16 @@
 
 /* Allt */
 
-#alltIndex {
-    font-size: 100%;
-    display: flex;
-    width: 100vw;
-    height: 120%;
+.footerDiv {
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-area: d1;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "BB BB"
-    "II II"
-    "II II"
-    "II II"
-    "d1 d1"
+    grid-template-columns: 1fr 0.1fr 0.1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "mp in fb"
     ;
-}
-
-.innerIndex {
-    height: 20vh;
-    grid-area: II;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-self: center;
-
 }
 
 #bakgrundsBild {
@@ -60,31 +45,45 @@
     
 }
 
-#alltIndex h1{
-    text-align: center;
-}
-
-#alltIndex p{
-    text-align: center;
-}
-
-#alltIndex article {
-    padding: 10%;
-}
-
 /* Index sida */
 
-
-.footerDiv {
-    margin-top: auto;
-    margin-bottom: auto;
-    grid-area: d1;
+#alltIndex {
+    font-size: 100%;
+    display: flex;
+    width: 100vw;
+    height: 120%;
     display: grid;
-    grid-template-columns: 1fr 0.1fr 0.1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "mp in fb"
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.6fr 3fr 1fr;
+    grid-template-areas: 
+    "BB BB"
+    "II II"
+    "d1 d1"
     ;
+}
+
+#alltIndex div {
+    text-align: center;
+}
+
+
+.innerIndex {
+    grid-area: II;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+
+}
+
+
+.covidinfo {
+    color: red;
+    border: 1px solid red;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .burgerMeny {
@@ -311,3 +310,65 @@ ul {
     font-size: 200%;
     margin-bottom: 5%;
 }
+
+/*På Gång*/
+
+#alltPagang {
+    text-align: center;
+    font-size: 100%;
+    display: flex;
+    width: 100vw;
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0.3fr 3fr 1fr;
+    grid-template-areas: 
+    "BB BB BB"
+    "PG PG PG"
+    "d1 d1 d1"
+    ;
+}
+
+.innerPagang {
+    grid-area: PG;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.bilderPagang {
+    border-radius: 150px;
+}
+
+.bilderOchHeadline h4 {
+    font-weight: normal;
+    font-size: 120%;
+}
+
+.innerPagang h1 {
+    font-size: 200%;
+    margin-bottom: 5%;
+}
+
+.bilderOchHeadline {
+    border: 1px solid black;
+}
+
+.divPagang {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 10%;
+    margin: 5%;
+}
+
+.innerDivPagang {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
