@@ -7,8 +7,9 @@
 /* Allt */
 
 .footerDiv {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-right: 4%;
+    margin-top: 3%;
+    height: 20vh;
     grid-area: d1;
     display: grid;
     grid-template-columns: 1fr 0.1fr 0.1fr;
@@ -16,79 +17,6 @@
     grid-template-areas:
     "mp in fb"
     ;
-}
-
-#bakgrundsBild {
-    grid-area: BB;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-image: url(../img/Background4header.png);
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    align-content: center;
-}
-
-.panalLogga {
-    grid-area: pl;
-    width: 12%;
-    margin-left: 2%;
-}
-
-.headerAllaSidor {
-    grid-area: he;
-    padding: 4%;
-    font-size: 220%;
-    margin-left: 6%;
-    display: block;
-    margin-top: 2%;
-    
-}
-
-/* Index sida */
-
-#alltIndex {
-    font-size: 100%;
-    display: flex;
-    width: 100vw;
-    height: 120%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.6fr 3fr 1fr;
-    grid-template-areas: 
-    "BB BB"
-    "II II"
-    "d1 d1"
-    ;
-}
-
-#alltIndex div {
-    text-align: center;
-}
-
-
-.innerIndex {
-    grid-area: II;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center;
-
-}
-
-
-.covidinfo {
-    color: red;
-    border: 1px solid red;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.burgerMeny {
-    grid-area: dv;
-    width: 20%;
 }
 
 .lokalisering {
@@ -105,6 +33,93 @@
 
 #facebook {
     grid-area: fb;
+}
+
+
+#bakgrundsBild {
+    grid-area: BB;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(../img/Background4header.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+
+.panalLogga {
+    grid-area: pl;
+    width: 10%;
+    margin-left: 2%;
+}
+
+.headerAllaSidor {
+    grid-area: he;
+    padding: 1.5%;
+    font-size: 220%;
+    margin-left: 9%;
+    display: block;
+    margin-top: 2%;
+    
+}
+
+/* Index sida */
+
+#alltIndex {
+    font-size: 100%;
+    width: 100vw;
+    height: 120%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20vh 3fr 1fr;
+    grid-template-areas: 
+    "BB BB"
+    "II II"
+    "d1 d1"
+    ;
+}
+
+#alltIndex div{
+    text-align: center;
+}
+
+
+.innerIndex {
+    grid-area: II;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+.bilderOchInfoIndex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: space-between;
+}
+.bilderPaStudion {
+    display: flex;
+    flex-direction: row;
+    width: 10vh;
+}
+
+.covidinfo {
+    color: red;
+    border: 1px solid red;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.covidinfo h1 {
+    margin: 5%;
+}
+
+.burgerMeny {
+    grid-area: dv;
+    width: 20%;
 }
 
 section h2 {
@@ -135,7 +150,7 @@ section h2 {
 }
 
 .burgerActive {
-    transform: translateY(100vh);
+    transform: translateY(110vh);
 }
 
 .burgerLinks li {
@@ -151,15 +166,16 @@ section h2 {
 }
 
 .burger div {
-    width: 2em;
-    height: 3px;
+    width: 2.5em;
+    height: 0.3em;
     background-color: rgba(204, 204, 204, 0.911);
-    margin: 5px;
+    margin: 4%;
     border-radius: 10%;
+    margin-left: 7vw;
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-5px, 8.5px);
 }
 
 .toggle .line2 {
@@ -167,7 +183,7 @@ section h2 {
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-5px, -8.5px);
 }
 
 .burgerMeny ul {
@@ -184,7 +200,7 @@ section h2 {
     height: 200vh;
     display: grid;
     grid-template-columns: 0.2fr 1fr 0.2fr;
-    grid-template-rows: 0.3fr 3fr 1fr;
+    grid-template-rows: 20vh 3fr 1fr;
     grid-template-areas: 
     "BB BB BB"
     "SA SA SA"
@@ -212,9 +228,8 @@ section h2 {
     grid-area: s1;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     margin: 10%;
-    background-color: solid white;
+    background-color: white;
 }
 
 
@@ -222,7 +237,7 @@ section h2 {
     grid-area: s2;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    background-color: white;
     margin: 10%;
 }
 
@@ -232,17 +247,35 @@ section h2 {
     margin-bottom: 3%;
     margin-left: 28%;
     margin-right: 28%;
-    border: 1px solid black;
+    border: 1.5px solid black;
+    background-color: white;
 }
 
+.articleSamverkan1 div {
+    margin: 5%;
+}
+
+.articleSamverkan2 div {
+    margin: 5%;
+}
+
+.articleSamverkan3 div {
+    margin: 3%;
+}
 .headerSamverkan {
     grid-area: h1;
     font-size: 150%;
+    padding-top: 3%;
 }
 
 .underHeaderSamverkan {
     grid-area: h2;
     font-size: 150%;
+
+}
+
+.underHeaderSamverkan h3 {
+    margin-top: 5%;
 }
 
 .headerSamverkanHusen {
@@ -255,7 +288,7 @@ ul {
   }
 
 .bilderSamverkan {
-    size: 10%;
+    size: 100%;
 }
 
 /* Galleri */
@@ -268,7 +301,7 @@ ul {
     height: 150vh;
     display: grid;
     grid-template-columns: 0.2fr 1fr 0.2fr;
-    grid-template-rows: 0.3fr 3fr 1fr;
+    grid-template-rows: 20vh 3fr 1fr;
     grid-template-areas: 
     "BB BB BB"
     "GA GA GA"
@@ -321,7 +354,7 @@ ul {
     height: 150vh;
     display: grid;
     grid-template-columns: 0.2fr 1fr 0.2fr;
-    grid-template-rows: 0.3fr 3fr 1fr;
+    grid-template-rows: 20vh 3fr 1fr;
     grid-template-areas: 
     "BB BB BB"
     "PG PG PG"
@@ -372,3 +405,44 @@ ul {
     justify-content: space-around;
 }
 
+/*Om Oss*/
+
+#alltOmOss {
+    text-align: center;
+    font-size: 100%;
+    display: flex;
+    width: 100vw;
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 20vh 3fr 1fr;
+    grid-template-areas: 
+    "BB BB BB"
+    "OO OO OO"
+    "d1 d1 d1"
+    ;
+}
+
+.innerOmOss {
+    grid-area: OO;
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.bilderOmOss {
+    border-radius: 100px;
+}
+
+.scenkonstnärerna {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.innerOmOss h1 {
+    font-size: 220%;
+}
