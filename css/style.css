@@ -467,6 +467,10 @@ ul {
     background-image: url(../img/Bakrgund.innehåll.png);
 }
 
+#omOss {
+    font-size: 16px !important;
+}
+
 .innerOmOss {
     grid-area: OO;
     display: flex;
@@ -497,12 +501,6 @@ ul {
 
 @media screen and (max-width: 800px) {
 
-    .panalLogga {
-        grid-area: pl;
-        font-size: 10px;
-        margin-left: 2%;
-    }
-
     .divPagang {
         display: flex;
         flex-direction: column;
@@ -517,13 +515,12 @@ ul {
     }
 
     html {
-       /* font-size: calc(70% + 6 * ((100vw - 320%) / 680)); */
-        font-size: calc(13px + 6 * ((100vw - 320px) / 680));
-    }
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680)) !important;
+      }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
     html {
-      font-size: 16px;
+        font-size: 22px !important;
     }
   }
