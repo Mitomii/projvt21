@@ -7,7 +7,7 @@
 /* Allt */
 
 body {
-    font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+    background-image: url(../img/Bakrgund.innehåll.png);
   }
 
 .footerDiv {
@@ -54,42 +54,38 @@ body {
     flex-direction: row;
     justify-content: space-between;
     background-image: url(../img/Background4header.png);
-    background-size: 100vw;
+    background-size: cover;
     background-repeat: no-repeat;
     align-content: center;
 }
 
+#panelDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .panalLogga {
     grid-area: pl;
-    width: 10%;
-    margin-left: 2%;
+    min-width: 10vw;
+    margin-left: 4%;
 }
 
 .headerAllaSidor {
     grid-area: he;
     padding: 1.5%;
-    font-size: 30px;
-    margin-left: 9%;
+    font-size: 2.5rem;
+    margin-left: 16%;
     display: block;
-    margin-top: 2%;
+    margin-top: 1%;
     
 }
 
 /* Index sida */
 
 #alltIndex {
-    font-size: 100%;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20vh 3fr 15vh;
-    grid-template-areas: 
-    "BB BB"
-    "II II"
-    "d1 d1"
-    ;
-    background-image: url(../img/Bakrgund.innehåll.png);
+    display: flex;
+    flex-direction: column;
 }
 
 #alltIndex div{
@@ -104,6 +100,7 @@ body {
     align-content: space-around;
     margin-left: 20%;
     margin-right: 20%;
+    background-image: url(../img/Bakrgund.innehåll.png);
 
 }
 
@@ -311,7 +308,6 @@ ul {
     font-size: 100%;
     display: flex;
     width: 100vw;
-    height: 150vh;
     display: grid;
     grid-template-columns: 0.2fr 1fr 0.2fr;
     grid-template-rows: 20vh 100% 25vh;
@@ -349,6 +345,11 @@ ul {
     height: 100%;
     text-align: center;
     
+}
+
+.bildGalleri {
+    display: flex;
+    justify-content: center;
 }
 
 .bilderOchInfo strong {
@@ -452,7 +453,6 @@ ul {
 
 #alltOmOss {
     text-align: center;
-    font-size: 100%;
     display: flex;
     width: 100vw;
     height: 100%;
@@ -482,7 +482,6 @@ ul {
 
 .bilderOmOss {
     border-radius: 100px;
-    width: 100%;
 }
 
 .scenkonstnärerna {
@@ -499,7 +498,7 @@ ul {
 
 /*Responsivitet*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 
     .divPagang {
         display: flex;
@@ -517,10 +516,45 @@ ul {
     html {
         font-size: calc(16px + 6 * ((100vw - 320px) / 680)) !important;
       }
+
+    .panalLogga {
+        margin-left: 15%;
+    }
+
+    .burgerMeny {
+        margin-right: 10%;
+    }
+    #bakgrundsBild {
+        justify-content: space-around;
+    }
+    
+    .bilderOmOss {
+        width: 80px;
+    }
+
+    .headerAllaSidor {
+        font-size: 1.5rem;
+        margin-top: 60px;
+    }
+
+    #alltOmOss {
+        height: 100vh;
+    }
+    
+
 }
 
 @media screen and (max-width: 1000px) {
     html {
-        font-size: 22px !important;
+        font-size: 14px !important;
+    }
+
+    .headerAllaSidor {
+        margin-left: 14%;
+        margin-top: 20px;
+    }
+
+    .burgerMeny {
+        margin-right: 2%;
     }
   }
