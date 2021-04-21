@@ -11,6 +11,7 @@ body {
   }
 
 .footerDiv {
+    text-align: center;
     padding: 2%;
     padding-bottom: 4%;
     grid-area: d1;
@@ -78,11 +79,80 @@ body {
     margin-left: 16%;
     display: block;
     margin-top: 1%;
-    
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: white;
 }
 
 /* Index sida */
 
+#alltIndex {
+    margin: unset;
+    font-size: 100%;
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 20vh 3fr 1fr;
+    grid-template-areas: 
+    "BB BB BB"
+    "IN IN IN"
+    "d1 d1 d1"
+    ;
+}
+
+#headlinePanjal p{
+    padding-top: 10px;
+}
+
+#headlinePanjal h1{
+    font-size: 175%;
+}
+
+#headlinePanjal h1{
+    font-size: 175%;
+}
+
+.innerIndex {
+    grid-area: IN;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.innerIndex p{
+    margin-bottom: 10%;
+}
+
+.covidinfo {
+    color: red;
+    border: 1px solid red;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.covidinfo h1 {
+    text-align: center;
+}
+
+.bilderIndex {
+    width: 30vw;
+}
+
+.bilderPaStudion {
+    display: flex;
+    flex-direction: row;
+}
+
+.bilderOchInfoIndex div {
+    text-align: center;
+    font-size: 130%;
+}
+
+
+/*
 #alltIndex {
     display: flex;
     flex-direction: column;
@@ -116,21 +186,11 @@ body {
     width: 10vh;
 }
 
-.covidinfo {
-    color: red;
-    border: 1px solid red;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.covidinfo h1 {
-    margin: 5%;
-}
-
 .burgerMeny {
     grid-area: dv;
     width: 20%;
 }
+*/
 
 /* Burger */
 
@@ -306,8 +366,8 @@ ul {
 #alltGalleri {
     text-align: center;
     font-size: 100%;
-    display: flex;
     width: 100vw;
+    height: 100%;
     display: grid;
     grid-template-columns: 0.2fr 1fr 0.2fr;
     grid-template-rows: 20vh 100% 25vh;
@@ -540,6 +600,16 @@ ul {
     #alltOmOss {
         height: 100vh;
     }
+
+    .articleSamverkan3 {
+        grid-area: s3;
+        margin-top: -3%;
+        margin-bottom: 3%;
+        margin-left: 8%;
+        margin-right: 8%;
+    
+        border:solid rgb(248, 248, 248);
+    }
     
 
 }
@@ -557,4 +627,20 @@ ul {
     .burgerMeny {
         margin-right: 2%;
     }
+
+    .bilderOchInfo {
+        display: flex;
+        flex-direction: column;  
+    }
   }
+
+  @media screen and (min-width: 600px) {
+    .burgerMeny {
+        margin-right: 5%;
+    }
+
+    .headerAllaSidor {
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+}
