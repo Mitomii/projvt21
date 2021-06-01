@@ -90,7 +90,7 @@ body {
     font-size: 100%;
     display: flex;
     width: 100vw;
-    height: 100%;
+    height: 80vh;
     display: grid;
     grid-template-columns: 0.2fr 1fr 0.2fr;
     grid-template-rows: 20vh 3fr 1fr;
@@ -107,10 +107,8 @@ body {
 
 #headlinePanjal h1{
     font-size: 175%;
-}
-
-#headlinePanjal h1{
-    font-size: 175%;
+    margin-top: 8%;
+    text-align: center;
 }
 
 .innerIndex {
@@ -131,6 +129,8 @@ body {
     border: 1px solid red;
     margin-left: 25%;
     margin-right: 25%;
+    margin-bottom: 10%;
+    padding: 2%;
 }
 
 .covidinfo h1 {
@@ -138,7 +138,7 @@ body {
 }
 
 .bilderIndex {
-    width: 30vw;
+    width: 26vw;
 }
 
 .bilderPaStudion {
@@ -151,46 +151,21 @@ body {
     font-size: 130%;
 }
 
-
-/*
-#alltIndex {
-    display: flex;
-    flex-direction: column;
+.bilderOchInfoIndex p {
+    margin-top: 5%;
 }
 
-#alltIndex div{
-    text-align: center;
+.bilderOchInfoIndex h1 {
+    margin-bottom: 5%;
+    font-size: 120%;
 }
 
-
-.innerIndex {
-    grid-area: II;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    margin-left: 20%;
-    margin-right: 20%;
-    background-image: url(../img/Bakrgund.innehåll.png);
-
-}
-
-.bilderOchInfoIndex {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-content: space-between;
-}
 .bilderPaStudion {
-    display: flex;
-    flex-direction: row;
-    width: 10vh;
+    border: 2px solid white;
 }
-
-.burgerMeny {
-    grid-area: dv;
-    width: 20%;
+.bilderPaStudion img{
+    margin: 3%;
 }
-*/
 
 /* Burger */
 
@@ -282,15 +257,20 @@ body {
     grid-template-areas: 
     "h1 h1"
     "h2 h2"
-    "s1 s2"
-    "s1 s2"
+    "s12 s12"
+    "s12 s12"
     "s3 s3"
     ;
     background-image: url(../img/Bakrgund.innehåll.png);
 }
 
+.articleSamverkan1and2 {
+    display: flex;
+    flex-direction: row;
+    grid-area: s12;
+}
+
 .articleSamverkan1 {
-    grid-area: s1;
     display: flex;
     flex-direction: column;
     margin: 10%;
@@ -300,7 +280,6 @@ body {
 
 
 .articleSamverkan2 {
-    grid-area: s2;
     display: flex;
     flex-direction: column;
     border:solid rgb(248, 248, 248);
@@ -354,7 +333,7 @@ ul {
   }
 
 .bilderSamverkan {
-    width: 100%;
+    width: 20vw;
 }
 
 .articleGerlersborg {
@@ -367,7 +346,7 @@ ul {
     text-align: center;
     font-size: 100%;
     width: 100vw;
-    height: 100%;
+    height: 190vh;
     display: grid;
     grid-template-columns: 0.2fr 1fr 0.2fr;
     grid-template-rows: 20vh 100% 25vh;
@@ -404,7 +383,12 @@ ul {
     flex-direction: row;
     height: 100%;
     text-align: center;
-    
+    padding: 2%;
+}
+
+.innerBilderOchInfo h2{
+    padding-bottom: 2%;
+    font-size: 120%;
 }
 
 .bildGalleri {
@@ -444,6 +428,10 @@ ul {
     text-align: start;
 }
 
+.innerPagang h2{
+    margin-bottom: 5%;
+}
+
 #alltPagang img{
     align-self: center;
 }
@@ -455,6 +443,11 @@ ul {
     margin-left: 15%;
     margin-right: 15%;
     padding: 5%;
+}
+
+.innerPagang > .innerDivPagang {
+    margin-left: -10%;
+    margin-right: -10%;
 }
 
 .bilderPagang {
@@ -501,7 +494,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: 2px solid white
+    border: 2px solid white;
 }
 
 .innerDivPagang h2{
@@ -556,9 +549,74 @@ ul {
 }
 
 
+/* Test Ny Footer */
+
+.test__footerDiv {
+    grid-area: d1;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 3%;
+    justify-content: space-between;
+    width: 100vw;
+    font-size: 100%;
+}
+
+.test__lokalisering {
+    display: flex;
+    flex-direction: row;
+    padding-right: 40%;
+}
+
+.test__lokalisering h2 {
+    padding-right: 40%;
+    padding-top: 10%;
+}
+
+.instaOchFb {
+    display: flex;
+    flex-direction: row;
+}
+
+.test__facebook {
+    margin-left: 10%;
+}
+
+.test__facebook img{
+    width: 40%;
+    min-width: 7vw;
+}
+
+
+.test__instagram img{
+    width: 40%;
+    min-width: 7vw
+}
+
+.loggorna {
+    display: flex;
+    flex-direction: column;
+}
+
+.loggorna a{
+    text-decoration: none;
+}
+
 /*Responsivitet*/
 
 @media screen and (max-width: 600px) {
+
+    .articleSamverkan1and2 {
+        flex-direction: column;
+    }
+
+    .panalLogga {
+        display: none;
+        position: none;
+    }
+    .test__footerDiv {
+        font-size: 70%;
+    }
 
     .divPagang {
         display: flex;
@@ -567,10 +625,13 @@ ul {
         margin: 5%;
     }
 
-    .innerDivPagang {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+    .test__lokalisering h2 {
+        padding-right: 20%;
+        padding-top: 10%;
+    }
+
+    .test__lokalisering {
+        padding-right: 15%;
     }
 
     html {
@@ -585,7 +646,7 @@ ul {
         margin-right: 10%;
     }
     #bakgrundsBild {
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
     
     .bilderOmOss {
@@ -593,7 +654,7 @@ ul {
     }
 
     .headerAllaSidor {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-top: 60px;
     }
 
@@ -611,17 +672,36 @@ ul {
         border:solid rgb(248, 248, 248);
     }
     
+    .bilderPaStudion {
+        display: block;
+        margin-right: 25%;
+        margin-left: 25%;
+    }
 
 }
 
 @media screen and (max-width: 1000px) {
+
+    .test__lokalisering {
+        padding-right: 23%;
+    }
+
+    .test__facebook {
+        margin-left: 0%;
+    }
+
+    .innerDivPagang {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
     html {
         font-size: 14px !important;
     }
 
     .headerAllaSidor {
         margin-left: 14%;
-        margin-top: 20px;
     }
 
     .burgerMeny {
